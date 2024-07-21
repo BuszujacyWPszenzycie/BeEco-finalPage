@@ -15,6 +15,13 @@
 		}
 	}
 
+	.find {
+		&__itemWrapper {
+			width: 500px;
+			height: 600px;
+		}
+	}
+
 	.footer {
 		&__item {
 			font-size: 2rem;

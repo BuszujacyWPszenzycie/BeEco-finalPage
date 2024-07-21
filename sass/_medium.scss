@@ -16,6 +16,19 @@
 	}
 
 	.find {
+		flex-direction: row;
+		flex-wrap: wrap;
+		&__imgWrapper {
+			display: block;
+			height: 50%;
+		}
+		&__itemWrapper {
+			width: 350px;
+			height: 450px;
+		}
+		&__itemTextWrapper {
+			height: 50%;
+		}
 		&__title {
 			font-size: 3.1rem;
 			text-align: center;

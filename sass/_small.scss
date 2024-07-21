@@ -16,6 +16,10 @@
 	}
 
 	.find {
+		&__itemWrapper {
+			width: 400px;
+			height: 500px;
+		}
 		&__title {
 			font-size: 2.8rem;
 			text-align: center;

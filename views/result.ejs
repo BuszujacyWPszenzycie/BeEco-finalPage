@@ -11,6 +11,12 @@
         <% for (value of foundValues) { %>
 
           <div class="find__itemWrapper">
+
+            <div class="find__imgWrapper">
+              <div class="find__imgShadow"></div>
+              <img src="<%= value.trashImageURL %>" alt="<%= value.trashName %>" class="find__trashImageURL">
+            </div>
+
             <div class="find__itemTextWrapper">
               <div class="find__trashNameWrapper">
                 <h2 class="find__trashName">
@@ -27,7 +33,6 @@
                   <%= value.trashDescription %>
                 </p>
               </div>
-
             </div>
 
           </div>
@@ -35,8 +40,11 @@
           <% } %>
 
             <% } else { %>
-              <h2 class="find__title">Nic nie znaleziono</h2>
-              <h2 class="find__title">Spróbuj użyć innych słów kluczowych</h2>
+              <div class="find__nothingWrapper">
+                <h2 class="find__title">Nic nie znaleziono</h2>
+                <h2 class="find__title">Spróbuj użyć innych słów kluczowych</h2>
+              </div>
+
               <% } %>
 
                 <!-- <div class="find__itemWrapper">
