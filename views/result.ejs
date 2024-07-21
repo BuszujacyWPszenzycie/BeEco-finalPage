@@ -1,0 +1,60 @@
+<%- include('includes/head.ejs') %>
+
+  <main>
+    <section class="section top">
+      <a href="/" class="top__link"><i class="ph ph-arrow-fat-line-left top__icon"></i></a>
+    </section>
+    <section class="section find">
+
+      <% if (foundValues.length> 0) { %>
+
+        <% for (value of foundValues) { %>
+
+          <div class="find__itemWrapper">
+            <div class="find__itemTextWrapper">
+              <div class="find__trashNameWrapper">
+                <h2 class="find__trashName">
+                  <%= value.trashName %>
+                </h2>
+              </div>
+              <div class="find__trashTypeWrapper">
+                <h3 class="find__trashType">
+                  <%= value.trashType %>
+                </h3>
+              </div>
+              <div class="find__descriptionWrapper">
+                <p class="find__description">
+                  <%= value.trashDescription %>
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <% } %>
+
+            <% } else { %>
+              <h2 class="find__title">Nic nie znaleziono</h2>
+              <h2 class="find__title">Spróbuj użyć innych słów kluczowych</h2>
+              <% } %>
+
+                <!-- <div class="find__itemWrapper">
+        <div class="find__trashNameWrapper">
+          <h2 class="find__trashName">gazeta papierowa</h2>
+        </div>
+        <div class="find__trashTypeWrapper">
+          <h3 class="find__trashType">papier</h3>
+        </div>
+        <div class="find__descriptionWrapper">
+          <p class="find__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quia natus, corrupti
+            nam temporibus,
+            necessitatibus cumque, ab ullam repellat delectus alias error numquam fuga totam illo officiis modi cum
+            consequuntur!</p>
+        </div>
+      </div> -->
+
+    </section>
+  </main>
+
+  <%- include('includes/footer.ejs') %>

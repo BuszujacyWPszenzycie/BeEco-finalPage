@@ -1,0 +1,24 @@
+@media (min-width: 1200px) {
+	.top {
+		&__icon {
+			font-size: 10rem;
+		}
+	}
+
+	.search {
+		&__button {
+			font-size: 2.8rem;
+		}
+		&__input {
+			height: 120px;
+			font-size: 2.7rem;
+		}
+	}
+
+	.footer {
+		&__item {
+			font-size: 2rem;
+			padding: 1.5rem;
+		}
+	}
+}

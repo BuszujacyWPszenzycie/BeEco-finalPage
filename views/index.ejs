@@ -1,0 +1,15 @@
+<%- include('includes/head.ejs') %>
+
+  <main>
+    <section class="section top">
+      <i class="fa-solid fa-leaf top__icon"></i>
+    </section>
+    <section class="search" id="search">
+      <form action="/result" method="POST" class="search__wrapper">
+        <input type="text" class="search__input" placeholder="Wyszukaj..." name="searchValue" id="searchValue">
+        <button class="search__button"><i class="fa-solid fa-magnifying-glass search__icon"></i></button>
+      </form>
+    </section>
+  </main>
+
+  <%- include('includes/footer.ejs') %>
